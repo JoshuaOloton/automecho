@@ -5,7 +5,7 @@ type Props = {}
 const Footer = (props: Props) => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-[#E2E8F7] border-t border-muted-foreground p-8">
+    <footer className="bg-[#E2E8F7] border-t border-muted p-8">
       <div className="w-4/5 mx-auto flex items-center justify-between">
         <div>
           <h4 className="font-bold text-primary text-xl">AutoMecho</h4>

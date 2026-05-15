@@ -18,7 +18,7 @@ import {
 
 export const title = "Image Dropzone";
 
-const Example = () => {
+const FileUpload4 = ({ classname }: { classname?: string }) => {
   const [files, setFiles] = React.useState<File[]>([]);
 
   const onFileReject = React.useCallback((file: File, message: string) => {
@@ -32,7 +32,7 @@ const Example = () => {
       accept="image/*"
       maxFiles={4}
       maxSize={4 * 1024 * 1024}
-      className="w-full max-w-md"
+      className={`w-full max-w-md ${classname}`}
       value={files}
       onValueChange={setFiles}
       onFileReject={onFileReject}
@@ -73,4 +73,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default FileUpload4;

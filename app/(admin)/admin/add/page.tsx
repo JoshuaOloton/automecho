@@ -69,8 +69,8 @@ const page = () => {
     <div className="w-4/5 mx-auto font-sans">
       <div className="flex items-end my-10">
         <div className="flex-1">
-          <h2 className="text-3xl font-medium mb-4">Add New Vehicle</h2>
-          <p>
+          <h2 className="text-3xl font-semibold mb-4">Add New Vehicle</h2>
+          <p className="text-black/70">
             Enter the specifications for the new fleet addition. Ensure
             high-resolution imagery for luxury listings.
           </p>

@@ -1,5 +1,5 @@
 import { Info } from "lucide-react";
-import ImageUpload from "./image-upload";
+import FileUpload4 from "./file-upload-dropzone-4";
 
 type Props = {};
 
@@ -7,7 +7,7 @@ const MediaForm = (props: Props) => {
   return (
     <div className="bg-white border border-primary/20 p-6">
       <h5 className="text-xl font-semibold mb-4">Vehicle Media</h5>
-      <ImageUpload />
+      <FileUpload4 />
       <div className="flex items-start gap-2 bg-[#E7EEFD] rounded-lg p-3 mt-5">
         <Info className="text-primary" />
         <p className="text-muted-foreground text-xs">
