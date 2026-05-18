@@ -68,102 +68,102 @@ const InfoForm = (props: Props) => {
       </CardHeader>
       <CardContent>
         <FieldGroup className="grid grid-cols-2">
-            {/* Brand Name */}
-            <Controller
-              name="brand"
-              control={control}
-              render={({ field, fieldState }) => (
-                <Field
-                  data-invalid={fieldState.invalid}
-                >
-                  <FieldLabel className="text-muted-foreground font-semibold" htmlFor="brand">Full name</FieldLabel>
-                  <Input
-                    {...field}
-                    id="brand"
-                    className="border-primary/50 rounded-none"
-                    aria-invalid={fieldState.invalid}
-                    placeholder="e.g Mercedes Benz"
-                    autoComplete="off"
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
-                </Field>
-              )}
-            />
-            {/* Model */}
-            <Controller
-              name="model"
-              control={control}
-              render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel className="text-muted-foreground font-semibold" htmlFor="model">Model</FieldLabel>
-                  <Input
-                    {...field}
-                    id="model"
-                    className="border-primary/50 rounded-none"
-                    aria-invalid={fieldState.invalid}
-                    placeholder="e.g S-Class Maybach"
-                    autoComplete="off"
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
-                </Field>
-              )}
-            />
-            {/* Phone No */}
-            <Controller
-              name="manufacturingYear"
-              control={control}
-              render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel 
-                    className="text-muted-foreground font-semibold"
-                    htmlFor="manufacturingYear">
-                      Manufacturing Year
-                  </FieldLabel>
-                  <Input
-                    {...field}
-                    id="manufacturingYear"
-                    className="border-primary/50 rounded-none"
-                    aria-invalid={fieldState.invalid}
-                    placeholder="+234123456789"
-                    autoComplete="off"
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
-                </Field>
-              )}
-            />
-            {/* Password */}
-            <Controller
-              name="currentMileage"
-              control={control}
-              render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel 
-                    className="text-muted-foreground font-semibold"
-                    htmlFor="currentMileage">
-                      Current Mileage (km)
-                  </FieldLabel>
-                  <Input
-                    {...field}
-                    type="number"
-                    id="currentMileage"
-                    className="border-primary/50 rounded-none"
-                    aria-invalid={fieldState.invalid}
-                    placeholder="******"
-                    autoComplete="off"
-                  />
-                  {fieldState.invalid && (
-                    <FieldError errors={[fieldState.error]} />
-                  )}
-                </Field>
-              )}
-            />
-          </FieldGroup>
+          {/* Brand Name */}
+          <Controller
+            name="brand"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Field
+                data-invalid={fieldState.invalid}
+              >
+                <FieldLabel className="text-muted-foreground font-semibold" htmlFor="brand">Full name</FieldLabel>
+                <Input
+                  {...field}
+                  id="brand"
+                  className="border-primary/50 rounded-none"
+                  aria-invalid={fieldState.invalid}
+                  placeholder="e.g Mercedes Benz"
+                  autoComplete="off"
+                />
+                {fieldState.invalid && (
+                  <FieldError errors={[fieldState.error]} />
+                )}
+              </Field>
+            )}
+          />
+          {/* Model */}
+          <Controller
+            name="model"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Field data-invalid={fieldState.invalid}>
+                <FieldLabel className="text-muted-foreground font-semibold" htmlFor="model">Model</FieldLabel>
+                <Input
+                  {...field}
+                  id="model"
+                  className="border-primary/50 rounded-none"
+                  aria-invalid={fieldState.invalid}
+                  placeholder="e.g S-Class Maybach"
+                  autoComplete="off"
+                />
+                {fieldState.invalid && (
+                  <FieldError errors={[fieldState.error]} />
+                )}
+              </Field>
+            )}
+          />
+          {/* Phone No */}
+          <Controller
+            name="manufacturingYear"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Field data-invalid={fieldState.invalid}>
+                <FieldLabel 
+                  className="text-muted-foreground font-semibold"
+                  htmlFor="manufacturingYear">
+                    Manufacturing Year
+                </FieldLabel>
+                <Input
+                  {...field}
+                  id="manufacturingYear"
+                  className="border-primary/50 rounded-none"
+                  aria-invalid={fieldState.invalid}
+                  placeholder="+234123456789"
+                  autoComplete="off"
+                />
+                {fieldState.invalid && (
+                  <FieldError errors={[fieldState.error]} />
+                )}
+              </Field>
+            )}
+          />
+          {/* Password */}
+          <Controller
+            name="currentMileage"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Field data-invalid={fieldState.invalid}>
+                <FieldLabel 
+                  className="text-muted-foreground font-semibold"
+                  htmlFor="currentMileage">
+                    Current Mileage (km)
+                </FieldLabel>
+                <Input
+                  {...field}
+                  type="number"
+                  id="currentMileage"
+                  className="border-primary/50 rounded-none"
+                  aria-invalid={fieldState.invalid}
+                  placeholder="******"
+                  autoComplete="off"
+                />
+                {fieldState.invalid && (
+                  <FieldError errors={[fieldState.error]} />
+                )}
+              </Field>
+            )}
+          />
+        </FieldGroup>
       </CardContent>
     </Card>
   );

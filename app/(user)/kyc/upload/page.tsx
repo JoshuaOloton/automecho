@@ -25,7 +25,7 @@ const page = (props: Props) => {
       </div>
       <div className='mt-16 space-y-10'>
         <div className='bg-white p-8 rounded-lg shadow-lg'>
-          <div className='flex items-start gap-4 mb-6'>
+          <div className='flex items-center gap-4 mb-6'>
             <IdCard size={40} className='text-primary bg-[#E2E8F7] p-2 rounded-lg' />
             <div className='flex flex-col flex-1'>
               <h4 className='font-semibold text-2xl'>National ID (NIN) or Passport</h4>
@@ -36,7 +36,7 @@ const page = (props: Props) => {
         </div>
 
         <div className='bg-white p-8 rounded-lg shadow-lg'>
-          <div className='flex items-start gap-4 mb-6'>
+          <div className='flex items-center gap-4 mb-6'>
             <MapPin size={40} className='text-primary bg-[#E2E8F7] p-2 rounded-lg' />
             <div className='flex flex-col flex-1'>
               <h4 className='font-semibold text-2xl'>Proof of Address</h4>
