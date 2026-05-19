@@ -1,6 +1,6 @@
 import AdminSidebar from "@/components/admin-sidebar";
 import Footer from "@/components/footer";
-import Header from "@/components/header";
+import AdminHeader from "@/components/admin-header";
 
 export default async function AdminLayout({
   children,
@@ -12,7 +12,7 @@ export default async function AdminLayout({
     <div className="flex">
       <AdminSidebar />
       <main className="flex-1">
-        <Header />
+        <AdminHeader />
         {children}
       </main>
     </div>
